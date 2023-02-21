@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterAdmin.master.cs" Inherits="Master2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 175px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" 
+    style="background-image: url('/ASPv2/Images/Green Chalkboard.jpg')">
+    <div style="text-align: center">
+        <p align="left" 
+            
+            
+            style="background-image: url('/ASPv2/Images/Green%20Chalkboard.jpg'); text-align: left;">
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="194px" 
+                ImageUrl="~/Images/Icon.png" onclick="ImageButton1_Click" Width="197px" 
+                style="text-align: left" />
+&nbsp;
+        <asp:Label ID="lblHome" runat="server" Font-Bold="True" Font-Italic="True" 
+            Font-Names="Segoe UI" Font-Size="69pt" Text="Northwind Education" 
+                ForeColor="White" style="text-align: left"></asp:Label>
+        &nbsp;
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+        </p>
+        <asp:Menu ID="Menu1" runat="server" BackColor="Aqua" Font-Bold="True" 
+            Font-Size="Large" ForeColor="#000099" Orientation="Horizontal" 
+            StaticSubMenuIndent="16px" Width="100%" 
+        StaticEnableDefaultPopOutImage="False">
+            
+            
+            <DynamicHoverStyle BackColor="White" />
+            <DynamicMenuItemStyle BackColor="#1ED5F3" HorizontalPadding="17px" 
+                VerticalPadding="15px" />
+            
+            
+            <Items>
+                <asp:MenuItem NavigateUrl="~/EventsAdmin.aspx" Text="Events" 
+                    Value="Events"></asp:MenuItem>
+                <asp:MenuItem Text="Schools" 
+                    Value="Lessons" Selectable="False">
+                    <asp:MenuItem NavigateUrl="~/Lessons2.aspx" Text="Add Schools/Courses" 
+                        Value="Add Schools/Courses"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/DeleteSchools.aspx" Text="Delete Schools/Courses" 
+                        Value="Delete Schools/Courses"></asp:MenuItem>
+                    <asp:MenuItem Text="Update Schools/Courses" Value="Update Schools/Courses" 
+                        NavigateUrl="~/UpdateSchool.aspx">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/FeedBacks.aspx" Text="Feedback" Value="Feedback">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Donations.aspx" Text="Donations" Value="Donations">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="50px" />
+        </asp:Menu>
+        <table class="style1">
+            <tr>
+                <td style="text-align: right">
+                    <table class="style1">
+                        <tr>
+                            <td style="text-align: left" class="style2">
+                                <asp:LinkButton ID="LinkButton2" runat="server" ForeColor="#FFFFCC" 
+                                    onclick="LinkButton2_Click">Log Out</asp:LinkButton>
+                            </td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

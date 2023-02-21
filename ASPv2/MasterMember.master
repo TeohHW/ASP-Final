@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterMember.master.cs" Inherits="MasterMember" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 966px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" 
+    style="background-image: url('/ASPv2/Images/Green Chalkboard.jpg')">
+    <div style="text-align: center">
+        <p align="left" 
+            
+            
+            style="background-image: url('/ASPv2/Images/Green%20Chalkboard.jpg'); text-align: left;">
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="194px" 
+                ImageUrl="~/Images/Icon.png" onclick="ImageButton1_Click" Width="197px" 
+                style="text-align: left" />
+&nbsp;
+        <asp:Label ID="lblHome" runat="server" Font-Bold="True" Font-Italic="True" 
+            Font-Names="Segoe UI" Font-Size="69pt" Text="Northwind Education" 
+                ForeColor="White" style="text-align: left"></asp:Label>
+        &nbsp;
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+        </p>
+        <asp:Menu ID="Menu1" runat="server" BackColor="Aqua" Font-Bold="True" 
+            Font-Size="Large" ForeColor="#000099" Orientation="Horizontal" 
+            StaticSubMenuIndent="16px" Width="100%" 
+        StaticEnableDefaultPopOutImage="False">
+            
+            
+            <DynamicHoverStyle BackColor="White" />
+            <DynamicMenuItemStyle BackColor="#1ED5F3" HorizontalPadding="17px" 
+                VerticalPadding="15px" />
+            
+            
+            <Items>
+                <asp:MenuItem NavigateUrl="~/AboutUs.aspx" Text="About Us" Value="About Us">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Partners.aspx" Text="Partners" Value="Partners">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/FindUs.aspx" Text="Contact Us" 
+                    Value="Contact Us"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Donate.aspx" Text="Donate" Value="Donate">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Events.aspx" Text="Events" Value="Events">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/FAQ.aspx" Text="FAQ" Value="FAQ"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/UpdateInfo.aspx" Text="Organize an Event" 
+                    Value="Organize an Event"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="50px" />
+        </asp:Menu>
+        <table class="style1">
+            <tr>
+                <td style="text-align: right">
+                    <table class="style1">
+                        <tr>
+                            <td style="text-align: left" class="style2">
+                                &nbsp;<asp:LinkButton ID="LinkButton3" runat="server" ForeColor="Yellow" onclick="LinkButton3_Click">Change account details</asp:LinkButton>
+                                <br />
+                                &nbsp;<asp:LinkButton ID="LinkButton4" runat="server" ForeColor="Yellow" 
+                                    onclick="LinkButton4_Click">Go back to login screen</asp:LinkButton>
+                            </td>
+                            <td style="text-align: justify">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:LinkButton ID="LinkButton2" runat="server" ForeColor="#FFFFCC" 
+                                    onclick="LinkButton1_Click" Font-Bold="True">Log Out</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

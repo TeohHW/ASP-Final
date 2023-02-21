@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-image: url('/ASPv2/Images/Green%20Chalkboard.jpg'); text-align: left;">
+            <asp:Image ID="Image2" runat="server" Height="194px" 
+                ImageUrl="~/Images/Icon.png" Width="194px" />
+        <asp:Label ID="lblHome" runat="server" Font-Bold="True" Font-Italic="True" 
+            Font-Names="Segoe UI" Font-Size="69pt" Text="Northwind Education" 
+                ForeColor="White"></asp:Label>
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
